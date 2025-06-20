@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
     <nav className="navbar container pt-3 pb-3 align-items-start">
-        <a className='navbar-brand text-light' href="">React-Django-Boilerplate</a>
+        <a className='navbar-brand text-light' href="">🌌 StockGnome</a>
         
         <div>
             <Button text='Login' class='btn-outline-info'/>
