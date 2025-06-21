@@ -1,4 +1,4 @@
-# React-Django-Boilerplate
+# StockGnome
 
 Web Application for Sports Leagues to generate balanced teams.
 
@@ -7,7 +7,7 @@ Web Application for Sports Leagues to generate balanced teams.
 ## 📦 Project Structure
 
 ```
-react-django-boilerplate/
+StockGnome/
 ├── backend/         # Django project
 ├── frontend/        # React + Vite app
 ├── env/             # Python virtual environment (not tracked)
@@ -21,8 +21,8 @@ react-django-boilerplate/
 ### ✅ 1. Clone the Repository
 
 ```bash
-git clone https://github.com/tylerrubino/react-django-boilerplate.git
-cd react-django-boilerplate
+git clone https://github.com/tylerrubino/StockGnome.git
+cd StockGnome
 ```
 
 ---
@@ -85,44 +85,44 @@ By default: [http://localhost:5173/](http://localhost:5173/)
 
 1. Fork the repo
 2. Create a new branch using the naming convention:  
-   `projectname-<issueNumber>-<task-name>`  
+   `StockGnome-<issueNumber>-<task-name>`  
    Example:
    ```bash
-   git checkout -b projectname-12-add-some-api
+   git checkout -b StockGnome-12-add-some-api
    ```
 3. Commit and push (`git commit -m 'Add your feature'`)
-4. Push your branch (`git push -u origin projectname-<issueNumber>-<task-name>`)
+4. Push your branch (`git push -u origin StockGnome-<issueNumber>-<task-name>`)
 5. Open a Pull Request to main!
 
 ---
 
 ## 🚧 Working on Tasks & Issues
 
-We use [GitHub Projects](https://github.com/your-org/projectname/projects) to manage tasks across the team.
+We use [GitHub Projects](https://github.com/your-org/StockGnome/projects) to manage tasks across the team.
 
 ### 🧠 Task Workflow
 
-1. **Pick a task from the `To do` column** in the [ProjectName GitHub Project board](https://github.com/users/tylerrubino/projects/1).
+1. **Pick a task from the `To do` column** in the [StockGnome GitHub Project board](https://github.com/users/tylerrubino/projects/1).
 2. **Assign yourself** to the task.
 3. **Move the task to `In progress`** to indicate you're working on it.
 4. **Create a new branch** using the correct naming convention:
 
    ```bash
-   git checkout -b projectname-<issueNumber>-<task-name>
+   git checkout -b StockGnome-<issueNumber>-<task-name>
    # Example:
-   git checkout -b projectname-12-add-new-api
+   git checkout -b StockGnome-12-add-new-api
    ```
 
 5. Make your changes, commit, and push to your branch:
 
    ```bash
    git commit -m "Add new API endpoint"
-   git push -u origin projectname-12-add-new-api
+   git push -u origin StockGnome-12-add-new-api
    ```
 
 6. Open a **Pull Request (PR)** to `main`, referencing the issue:
 
-   - Name the PR `projectname#12 - add new api`
+   - Name the PR `StockGnome#12 - add new api`
    - Add `Closes #12` at the bottom of your description to auto-link and close the issue on merge.
 
 7. After opening your PR:
