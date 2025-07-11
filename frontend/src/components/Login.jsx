@@ -24,7 +24,7 @@ const Login = () => {
       localStorage.setItem('access_token', response.data.access);
       localStorage.setItem('refresh_token', response.data.refresh);
       setIsLoggedIn(true);
-      navigate('/');
+      navigate('/dashboard');
     } catch (error) {
       setError('Invalid Credentials.');
     } finally {
