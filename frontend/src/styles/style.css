@@ -22,3 +22,33 @@ body {
   height: 48px;
   object-fit: contain;
 }
+
+.hero-icon {
+  width: 64px;
+  height: 64px;
+  filter: drop-shadow(0 0 6px #0ff);
+}
+
+.btn-glow {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-glow:hover {
+  color: #fff;
+  box-shadow: 0 0 12px #17a2b8;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h2, h5, h6 {
+  color: #fff;
+}
+
+p {
+  color: #ced4da;
+}
