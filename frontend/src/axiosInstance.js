@@ -38,7 +38,6 @@ axiosInstance.interceptors.response.use(
 				const response = await axiosInstance.post('/token/refresh/', {
 					refresh: refreshToken,
 				});
-				console.log('new access token ===>', response.data.access);
 				localStorage.setItem('access_token', response.data.access);
 				originalRequest.headers[
 					'Authorization'
