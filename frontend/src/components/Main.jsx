@@ -20,7 +20,7 @@ const Main = () => {
         <img src="../../public/StockGnomeClear.png" className="hero-icon mb-4" alt="StockGnome Logo" />
         <h1 className="display-4 font-weight-bold mb-3">Let the Gnome Crunch the Numbers</h1>
         <p className="lead mb-4">
-          StockGnome is an AI-powered platform that predicts future stock prices and trends using machine learning and real-time analytics.
+          StockGnome is an AI-powered platform that delivers accurate, data-driven forecasts for stock prices using machine learning and historical market patterns.
         </p>
         <Button text="Get Started" class="btn-glow btn-outline-info btn-lg px-4" url="/login" />
       </section>
@@ -30,11 +30,7 @@ const Main = () => {
         <div className="col-md-6 mb-4 mb-md-0">
           <h2 className="font-weight-bold">How It Works</h2>
           <p>
-            We train custom ML models on historical market data, sentiment signals, and macroeconomic indicators. 
-            Every forecast is computed using a blend of regression techniques and time series analysis.
-          </p>
-          <p>
-            Our stack: <strong>Django</strong> (Python backend), <strong>React</strong> (interactive UI), and <strong>PostgreSQL</strong> (secure storage).
+           Our models are trained on 10+ years of market data, technical indicators, and macroeconomic trends. Each forecast blends classic regression with advanced time-series analysis.
           </p>
         </div>
         <div className="col-md-6 text-center">
@@ -46,15 +42,15 @@ const Main = () => {
       <section className="my-5 text-center">
         <h2 className="font-weight-bold mb-4">Why Use StockGnome?</h2>
         <div className="row">
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 mb-4 card-box">
             <h5>📈 Smarter Investing</h5>
             <p>Make informed decisions using forward-looking data, not gut feelings.</p>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 mb-4 card-box">
             <h5>⚙️ Powerful Automation</h5>
             <p>Our models continuously learn and adapt as new data arrives.</p>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 mb-4 card-box">
             <h5>🧠 Intuitive Insights</h5>
             <p>Clean, readable dashboards surface only what matters—no clutter.</p>
           </div>
@@ -65,19 +61,19 @@ const Main = () => {
       <section className="my-5">
         <h2 className="font-weight-bold text-center mb-4">Core Features</h2>
         <div className="row text-center">
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 mb-4 card-box">
             <h6>📊 Price Forecasting</h6>
             <p>AI-powered price predictions for short- and medium-term timelines.</p>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 mb-4 card-box">
             <h6>📉 Historical Analysis</h6>
             <p>Overlay historical performance to validate forecasts.</p>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 mb-4 card-box">
             <h6>💬 Intelligent Commentary</h6>
             <p>Natural language summaries generated with ML models.</p>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 mb-4 card-box">
             <h6>🔒 Private & Secure</h6>
             <p>Built on secure open-source frameworks with strong data protection.</p>
           </div>

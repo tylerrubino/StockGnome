@@ -52,3 +52,28 @@ h2, h5, h6 {
 p {
   color: #ced4da;
 }
+
+.card-box {
+  background-color: #2b3035;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin: 0.5rem 0;
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.2);
+}
+
+.section-dark {
+  background-color: #1c1f23;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-accent {
+  color: #0ff;
+}
