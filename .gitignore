@@ -17,3 +17,4 @@ frontend/dist/
 *.sqlite3
 *.log
 *.env
+*.png
