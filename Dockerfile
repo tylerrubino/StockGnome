@@ -35,16 +35,13 @@ RUN pip install -r ./backend/requirements.txt
 COPY --from=build-stage ./code/frontend/dist /code/backend/static
 COPY --from=build-stage ./code/frontend/dist/index.html /code/backend/main/templates/index.html
 
-# Run Django migrations
-RUN python /code/backend/manage.py migrate
-
-# Collect static files
-RUN python /code/backend/manage.py collectstatic --noinput
-
 # Expose the port
 EXPOSE 80
 
-WORKDIR /code/backend/
+# Add entrypoint
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-# Run the application
-CMD ["gunicorn", "main.wsgi:application", "--bind", "0.0.0.0:8000"]
+# Set working directory and start app
+WORKDIR /code/backend
+ENTRYPOINT ["/entrypoint.sh"]
