@@ -23,12 +23,12 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push Docker image
-        run: |
-          docker buildx build \
-            --build-arg DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }} \
-            -t ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest \
-            --push \
-            .
+        run: >
+          docker buildx build 
+          --build-arg DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }}
+          -t ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest
+          --push
+          .
 
       - name: Setup SSH
         run: |
