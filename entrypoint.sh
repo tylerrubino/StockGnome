@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Apply migrations
-python manage.py migrate
+python manage.py migrate --noinput
 
 # Collect static files
 python manage.py collectstatic --noinput

@@ -49,6 +49,12 @@ jobs:
             docker run -d \
               --name stockgnome \
               -e SECRET_KEY=\"${{ secrets.DJANGO_SECRET_KEY }}\" \
+              -e DEBUG='False' \
+              -e DB_NAME='${{ secrets.DB_NAME }}' \
+              -e DB_USER='${{ secrets.DB_USER }}' \
+              -e DB_PASSWORD='${{ secrets.DB_PASSWORD }}' \
+              -e DB_HOST='${{ secrets.DB_HOST }}' \
+              -e DB_PORT='5432' \
               -p 80:8000 \
               ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest
           "
