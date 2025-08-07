@@ -30,7 +30,7 @@ COPY ./backend /code/backend
 RUN pip install -r ./backend/requirements.txt
 
 # Copy the frontend build to the Django project
-COPY --from=build-stage ./code/frontend/dist /code/backend/static
+COPY --from=build-stage ./code/frontend/dist /code/backend/static/
 COPY --from=build-stage ./code/frontend/dist/index.html /code/backend/main/templates/index.html
 
 # Expose the port
