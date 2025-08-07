@@ -43,7 +43,7 @@ jobs:
             docker rm stockgnome || true;
             docker run -d \
               --name stockgnome \
-              -e SECRET_KEY='${{ secrets.DJANGO_SECRET_KEY }}' \
+              -e SECRET_KEY=\"${{ secrets.DJANGO_SECRET_KEY }}\" \
               -p 80:8000 \
               ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest
           "
