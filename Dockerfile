@@ -27,6 +27,8 @@ WORKDIR /code
 COPY ./backend /code/backend
 
 # Install the required packages
+ARG DJANGO_SECRET_KEY
+ENV SECRET_KEY=${DJANGO_SECRET_KEY}
 RUN pip install -r ./backend/requirements.txt
 
 # Copy the frontend build to the Django project
