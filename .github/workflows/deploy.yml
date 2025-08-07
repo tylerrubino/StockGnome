@@ -28,7 +28,6 @@ jobs:
             --build-arg DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }} \
             -t ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest
-
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
