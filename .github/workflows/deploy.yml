@@ -36,16 +36,14 @@ jobs:
 
       - name: Deploy to AWS EC2
         run: |
-          docker_run_cmd="docker run -d \
-            --name stockgnome \
-            -e SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }} \
-            -p 80:8000 \
-            ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest"
-
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ubuntu@${{ secrets.AWS_EC2_IP }} "
             docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }};
             docker pull ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest;
             docker stop stockgnome || true;
             docker rm stockgnome || true;
-            $docker_run_cmd
+            docker run -d \
+              --name stockgnome \
+              -e SECRET_KEY='${{ secrets.DJANGO_SECRET_KEY }}' \
+              -p 80:8000 \
+              ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest
           "
