@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push Docker image
-        run: >
+        run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/stockgnome:latest
 
