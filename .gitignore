@@ -9,7 +9,6 @@ frontend/dist/
 
 # OS
 .DS_Store
-Dockerfile
 
 # VSCode
 .vscode/
