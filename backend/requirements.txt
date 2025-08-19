@@ -79,7 +79,6 @@ parso==0.8.4
 peewee==3.18.2
 pickleshare==0.7.5
 pillow==11.2.1
-pipreqs==0.5.0
 platformdirs==4.3.8
 proglog==0.1.12
 prompt_toolkit==3.0.51
