@@ -3,11 +3,13 @@ from django.urls import include, path, re_path
 from django.conf import settings
 from django.conf.urls.static import static
 from main.views import index
+from django.http import HttpResponse
 
 def healthz(_): return HttpResponse("OK")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("healthz", healthz),
     path("healthz/", healthz),
     # Base API Endpoint
     path('api/v1/', include('api.urls')),
