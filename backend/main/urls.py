@@ -4,9 +4,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from main.views import index
 
+def healthz(_): return HttpResponse("OK")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    path("healthz/", healthz),
     # Base API Endpoint
     path('api/v1/', include('api.urls')),
 ]
