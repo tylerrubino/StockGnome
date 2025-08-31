@@ -84,7 +84,6 @@ platformdirs==4.3.8
 proglog==0.1.12
 prompt_toolkit==3.0.51
 protobuf==5.29.5
-psycopg[binary]==3.2.1
 psycopg2-binary==2.9.10
 pure_eval==0.2.3
 pycparser==2.22
