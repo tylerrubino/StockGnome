@@ -1,6 +1,6 @@
 # StockGnome
 
-Web Application for Sports Leagues to generate balanced teams.
+Web Application for predicting stock prices given tickers using the previous 30% of the data against the test data of the previous 30% using a custom trained linear-regression model.
 
 ---
 
