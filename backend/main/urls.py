@@ -5,10 +5,14 @@ from django.conf.urls.static import static
 from main.views import index
 from django.http import HttpResponse
 
-def healthz(_): return HttpResponse("OK")
+def healthz(_request): return HttpResponse("OK")
+
+def index(_request):    # make "/" return 200 too
+    return HttpResponse("StockGnome backend is running.")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index),
     path("healthz", healthz),
     path("healthz/", healthz),
     # Base API Endpoint
